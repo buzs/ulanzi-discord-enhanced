@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="com.buzs.discord.ulanziPlugin/resources/assets/btn_discord_enc_logo.svg" alt="Discord Enhanced" width="180">
+  <img src="docs/images/cover.png" alt="Discord Enhanced" width="700">
 </p>
 
 <h1 align="center">Discord Enhanced for Ulanzi D200</h1>
@@ -82,25 +82,25 @@ The plugin requests the private `rpc.video.*` and `rpc.screenshare.*` scopes req
 
 ## Actions
 
-| Action | Controller | What it does |
-| --- | --- | --- |
-| Mute | Keypad | Toggles the Discord microphone mute state. |
-| Push To Mute | Keypad | Holds microphone mute while the key is held and restores the previous state on release. |
-| Push To Talk | Keypad | Uses Discord push-to-talk while the key is held, with a mute fallback. |
-| Deafen | Keypad | Toggles self-deafen. |
-| Toggle Video | Keypad | Toggles the camera when supported by the connected Discord client. |
-| Toggle Screen Share | Keypad | Toggles screen sharing when supported by the connected Discord client. |
-| Voice Channel | Keypad | Joins or leaves the configured voice channel. |
-| Text Channel | Keypad | Opens the configured text channel in Discord. |
-| Set Audio Device | Keypad | Sets the configured input/output device. |
-| Voice Input Mode Toggle | Keypad | Switches between voice activity and push-to-talk. |
-| Volume Control | Encoder | Presses/rotates to control configured input or output volume. |
-| User Voice Control | Encoder | Controls a configured user's voice volume. |
-| Notifications | Keypad | Opens the latest Discord notification channel. |
-| Soundboard | Keypad | Plays a configured Discord Soundboard sound. |
-| Server Stats | Keypad | Displays voice user count or RPC online count for a server. |
-| Mute Control | Encoder | Press toggles mute; rotate adjusts input volume. |
-| Deafen Control | Encoder | Press toggles deafen; rotate adjusts output volume. |
+| Action                  | Controller | What it does                                                                            |
+| ----------------------- | ---------- | --------------------------------------------------------------------------------------- |
+| Mute                    | Keypad     | Toggles the Discord microphone mute state.                                              |
+| Push To Mute            | Keypad     | Holds microphone mute while the key is held and restores the previous state on release. |
+| Push To Talk            | Keypad     | Uses Discord push-to-talk while the key is held, with a mute fallback.                  |
+| Deafen                  | Keypad     | Toggles self-deafen.                                                                    |
+| Toggle Video            | Keypad     | Toggles the camera when supported by the connected Discord client.                      |
+| Toggle Screen Share     | Keypad     | Toggles screen sharing when supported by the connected Discord client.                  |
+| Voice Channel           | Keypad     | Joins or leaves the configured voice channel.                                           |
+| Text Channel            | Keypad     | Opens the configured text channel in Discord.                                           |
+| Set Audio Device        | Keypad     | Sets the configured input/output device.                                                |
+| Voice Input Mode Toggle | Keypad     | Switches between voice activity and push-to-talk.                                       |
+| Volume Control          | Encoder    | Presses/rotates to control configured input or output volume.                           |
+| User Voice Control      | Encoder    | Controls a configured user's voice volume.                                              |
+| Notifications           | Keypad     | Opens the latest Discord notification channel.                                          |
+| Soundboard              | Keypad     | Plays a configured Discord Soundboard sound.                                            |
+| Server Stats            | Keypad     | Displays voice user count or RPC online count for a server.                             |
+| Mute Control            | Encoder    | Press toggles mute; rotate adjusts input volume.                                        |
+| Deafen Control          | Encoder    | Press toggles deafen; rotate adjusts output volume.                                     |
 
 ## Settings Panel
 

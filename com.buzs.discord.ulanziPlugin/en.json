@@ -1,0 +1,23 @@
+{
+  "Description": "Control Discord voice, channels, notifications and Soundboard",
+  "Name": "Discord Enhanced",
+  "Actions": [
+    { "Name": "Mute", "Tooltip": "Toggle microphone mute" },
+    { "Name": "Push to Mute", "Tooltip": "Mute while holding the key and restore when released" },
+    { "Name": "Push to Talk", "Tooltip": "Unmute while holding the key and restore when released" },
+    { "Name": "Deafen", "Tooltip": "Toggle deafen" },
+    { "Name": "Toggle Video", "Tooltip": "Toggle Discord camera in the active voice channel" },
+    { "Name": "Toggle Screen Share", "Tooltip": "Toggle Discord screen share in the active voice channel" },
+    { "Name": "Voice Channel", "Tooltip": "Join or leave a configured voice channel" },
+    { "Name": "Text Channel", "Tooltip": "Open a configured text channel" },
+    { "Name": "Set Audio Device", "Tooltip": "Set Discord input and output devices" },
+    { "Name": "Voice Input Mode Toggle", "Tooltip": "Toggle between voice activity and push to talk" },
+    { "Name": "Volume Control", "Tooltip": "Control Discord input or output volume" },
+    { "Name": "User Voice Control", "Tooltip": "Control a user's voice volume in the current voice channel" },
+    { "Name": "Notifications", "Tooltip": "Show recent Discord notifications and open the latest channel on press" },
+    { "Name": "Soundboard", "Tooltip": "Play a Discord Soundboard sound" },
+    { "Name": "Server Stats", "Tooltip": "Show the latest Discord server status count" },
+    { "Name": "Mute Control", "Tooltip": "Toggle microphone mute and adjust input volume from an encoder" },
+    { "Name": "Deafen Control", "Tooltip": "Toggle deafen and adjust output volume from an encoder" }
+  ]
+}

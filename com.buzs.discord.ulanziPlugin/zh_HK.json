@@ -1,0 +1,23 @@
+{
+  "Description": "控制 Discord 語音、頻道、通知和 Soundboard",
+  "Name": "Discord Enhanced",
+  "Actions": [
+    { "Name": "靜音", "Tooltip": "切換麥克風靜音" },
+    { "Name": "按住靜音", "Tooltip": "按住按鍵時靜音，放開後還原" },
+    { "Name": "按住說話", "Tooltip": "按住按鍵時取消靜音，放開後還原" },
+    { "Name": "拒聽", "Tooltip": "切換拒聽狀態" },
+    { "Name": "切換視像", "Tooltip": "切換目前語音頻道中的 Discord 攝影機" },
+    { "Name": "切換螢幕分享", "Tooltip": "切換目前語音頻道中的 Discord 螢幕分享" },
+    { "Name": "語音頻道", "Tooltip": "加入或離開已設定的語音頻道" },
+    { "Name": "文字頻道", "Tooltip": "開啟已設定的文字頻道" },
+    { "Name": "設定音訊裝置", "Tooltip": "設定 Discord 輸入和輸出裝置" },
+    { "Name": "語音輸入模式", "Tooltip": "在語音活動和按鍵說話之間切換" },
+    { "Name": "音量控制", "Tooltip": "控制 Discord 輸入或輸出音量" },
+    { "Name": "使用者語音控制", "Tooltip": "控制目前語音頻道中的使用者音量" },
+    { "Name": "通知", "Tooltip": "顯示最近的 Discord 通知並開啟最後的頻道" },
+    { "Name": "Soundboard", "Tooltip": "播放 Discord Soundboard 聲音" },
+    { "Name": "伺服器統計", "Tooltip": "顯示最新的 Discord 伺服器狀態" },
+    { "Name": "靜音控制", "Tooltip": "切換靜音並使用編碼器調整輸入音量" },
+    { "Name": "拒聽控制", "Tooltip": "切換拒聽並使用編碼器調整輸出音量" }
+  ]
+}

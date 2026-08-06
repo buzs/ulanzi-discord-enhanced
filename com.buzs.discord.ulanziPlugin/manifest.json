@@ -1,0 +1,416 @@
+{
+  "Author": "Buzs",
+  "Name": "Discord Enhanced",
+  "Description": "Control Discord audio, channels and voice state from Ulanzi Deck.",
+  "Icon": "resources/assets/btn_discord_enc_logo.svg",
+  "Version": "0.1.0",
+  "Category": "Discord",
+  "CategoryIcon": "resources/assets/btn_discord_enc_logo.svg",
+  "CodePath": "plugin/app.js",
+  "Type": "JavaScript",
+  "PrivateAPI": true,
+  "UUID": "com.buzs.ulanzideck.discord",
+  "Actions": [
+    {
+      "Name": "Mute",
+      "Icon": "resources/assets/btn_discord_enc_mute.svg",
+      "PropertyInspectorPath": "property-inspectors/mute/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Mute",
+          "Image": "resources/assets/btn_discord_enc_mute.svg"
+        },
+        {
+          "Name": "Unmute",
+          "Image": "resources/assets/btn_discord_enc_unmute.svg"
+        }
+      ],
+      "Tooltip": "Toggle microphone mute",
+      "UUID": "com.buzs.ulanzideck.discord.mute",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Push to Mute",
+      "Icon": "resources/assets/btn_discord_enc_mute.svg",
+      "PropertyInspectorPath": "property-inspectors/push-to-mute/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Ready",
+          "Image": "resources/assets/btn_discord_enc_unmute.svg"
+        },
+        {
+          "Name": "Muted",
+          "Image": "resources/assets/btn_discord_enc_mute.svg"
+        }
+      ],
+      "Tooltip": "Mute while holding the key and restore when released",
+      "UUID": "com.buzs.ulanzideck.discord.pushtomute",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Push to Talk",
+      "Icon": "resources/assets/btn_discord_enc_unmute.svg",
+      "PropertyInspectorPath": "property-inspectors/push-to-talk/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Ready",
+          "Image": "resources/assets/btn_discord_enc_mute.svg"
+        },
+        {
+          "Name": "Talking",
+          "Image": "resources/assets/btn_discord_enc_unmute.svg"
+        }
+      ],
+      "Tooltip": "Unmute while holding the key and restore when released",
+      "UUID": "com.buzs.ulanzideck.discord.pushtotalk",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Deafen",
+      "Icon": "resources/assets/btn_discord_enc_deafen.svg",
+      "PropertyInspectorPath": "property-inspectors/deafen/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Deafen",
+          "Image": "resources/assets/btn_discord_enc_deafen.svg"
+        },
+        {
+          "Name": "Undeafen",
+          "Image": "resources/assets/btn_discord_enc_undeafen.svg"
+        }
+      ],
+      "Tooltip": "Toggle deafen",
+      "UUID": "com.buzs.ulanzideck.discord.deafen",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Toggle Video",
+      "Icon": "resources/assets/btn_discord_enc_video.png",
+      "PropertyInspectorPath": "property-inspectors/toggle-video/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Video Off",
+          "Image": "resources/assets/btn_discord_enc_video.png"
+        },
+        {
+          "Name": "Video On",
+          "Image": "resources/assets/btn_discord_enc_unvideo.png"
+        }
+      ],
+      "Tooltip": "Toggle Discord camera in the active voice channel",
+      "UUID": "com.buzs.ulanzideck.discord.togglevideo",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Toggle Screen Share",
+      "Icon": "resources/assets/btn_discord_enc_screenshare.png",
+      "PropertyInspectorPath": "property-inspectors/toggle-screen-share/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Screen Share Off",
+          "Image": "resources/assets/btn_discord_enc_screenshare.png"
+        },
+        {
+          "Name": "Screen Share On",
+          "Image": "resources/assets/btn_discord_enc_unscreenshare.png"
+        }
+      ],
+      "Tooltip": "Toggle Discord screen share in the active voice channel",
+      "UUID": "com.buzs.ulanzideck.discord.togglescreenshare",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Voice Channel",
+      "Icon": "resources/assets/btn_discord_enc_voice_channel.svg",
+      "PropertyInspectorPath": "property-inspectors/voice-channel/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Enter",
+          "Image": "resources/assets/btn_discord_enc_voice_channel.svg"
+        },
+        {
+          "Name": "Leave",
+          "Image": "resources/assets/btn_discord_enc_voice_channel.svg"
+        }
+      ],
+      "Tooltip": "Join or leave a configured voice channel",
+      "UUID": "com.buzs.ulanzideck.discord.voicechannel",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Text Channel",
+      "Icon": "resources/assets/btn_discord_enc_text_channel.svg",
+      "PropertyInspectorPath": "property-inspectors/text-channel/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Open",
+          "Image": "resources/assets/btn_discord_enc_text_channel.svg"
+        }
+      ],
+      "Tooltip": "Open a configured text channel",
+      "UUID": "com.buzs.ulanzideck.discord.textchannel",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Set Audio Device",
+      "Icon": "resources/assets/btn_discord_enc_audio_device.svg",
+      "PropertyInspectorPath": "property-inspectors/set-audio-device/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Set",
+          "Image": "resources/assets/btn_discord_enc_audio_device.svg"
+        }
+      ],
+      "Tooltip": "Set Discord input and output devices",
+      "UUID": "com.buzs.ulanzideck.discord.setaudiodevice",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Voice Input Mode Toggle",
+      "Icon": "resources/assets/btn_discord_enc_voice_input_mode_activity.svg",
+      "PropertyInspectorPath": "property-inspectors/toggle-push-to-talk/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Voice Activity",
+          "Image": "resources/assets/btn_discord_enc_voice_input_mode_activity.svg"
+        },
+        {
+          "Name": "Push to Talk",
+          "Image": "resources/assets/btn_discord_enc_voice_input_mode_push_to_talk.svg"
+        }
+      ],
+      "Tooltip": "Toggle between voice activity and push to talk",
+      "UUID": "com.buzs.ulanzideck.discord.togglepushtotalk",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Volume Control",
+      "Icon": "resources/assets/btn_discord_enc_volume_control.svg",
+      "PropertyInspectorPath": "property-inspectors/volume-control/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Volume",
+          "Image": "resources/assets/btn_discord_enc_volume_control.svg"
+        }
+      ],
+      "Tooltip": "Control Discord input or output volume",
+      "UUID": "com.buzs.ulanzideck.discord.volumecontrol",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Encoder",
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "User Voice Control",
+      "Icon": "resources/assets/btn_discord_enc_user_voice_control.svg",
+      "PropertyInspectorPath": "property-inspectors/user-voice-control/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "User Volume",
+          "Image": "resources/assets/btn_discord_enc_user_voice_control.svg"
+        }
+      ],
+      "Tooltip": "Control a user's voice volume in the current voice channel",
+      "UUID": "com.buzs.ulanzideck.discord.uservoicecontrol",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Encoder",
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Notifications",
+      "Icon": "resources/assets/btn_discord_enc_notification.png",
+      "PropertyInspectorPath": "property-inspectors/notification/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "No Notifications",
+          "Image": "resources/assets/btn_discord_enc_notification.png"
+        },
+        {
+          "Name": "Notifications",
+          "Image": "resources/assets/btn_discord_enc_notification.png"
+        }
+      ],
+      "Tooltip": "Show recent Discord notifications and open the latest channel on press",
+      "UUID": "com.buzs.ulanzideck.discord.notification",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Soundboard",
+      "Icon": "resources/assets/btn_discord_enc_soundboard.svg",
+      "PropertyInspectorPath": "property-inspectors/soundboard/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Soundboard",
+          "Image": "resources/assets/btn_discord_enc_soundboard.svg"
+        }
+      ],
+      "Tooltip": "Play a Discord Soundboard sound",
+      "UUID": "com.buzs.ulanzideck.discord.soundboard",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Server Stats",
+      "Icon": "resources/assets/btn_discord_enc_serverstats.png",
+      "PropertyInspectorPath": "property-inspectors/server-stats/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Server Stats",
+          "Image": "resources/assets/btn_discord_enc_serverstats.png"
+        }
+      ],
+      "Tooltip": "Show the latest Discord server status count",
+      "UUID": "com.buzs.ulanzideck.discord.serverstats",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Mute Control",
+      "Icon": "resources/assets/btn_discord_enc_mute.svg",
+      "PropertyInspectorPath": "property-inspectors/mute-control/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Unmute",
+          "Image": "resources/assets/btn_discord_enc_unmute.svg"
+        },
+        {
+          "Name": "Mute",
+          "Image": "resources/assets/btn_discord_enc_mute.svg"
+        }
+      ],
+      "Tooltip": "Toggle microphone mute and adjust input volume from an encoder",
+      "UUID": "com.buzs.ulanzideck.discord.mutecontrol",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Encoder",
+        "Keypad"
+      ],
+      "Devices": []
+    },
+    {
+      "Name": "Deafen Control",
+      "Icon": "resources/assets/btn_discord_enc_deafen.svg",
+      "PropertyInspectorPath": "property-inspectors/deafen-control/index.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Undeafen",
+          "Image": "resources/assets/btn_discord_enc_undeafen.svg"
+        },
+        {
+          "Name": "Deafen",
+          "Image": "resources/assets/btn_discord_enc_deafen.svg"
+        }
+      ],
+      "Tooltip": "Toggle deafen and adjust output volume from an encoder",
+      "UUID": "com.buzs.ulanzideck.discord.deafencontrol",
+      "SupportedInMultiActions": false,
+      "DisableAutomaticStates": true,
+      "Controllers": [
+        "Encoder",
+        "Keypad"
+      ],
+      "Devices": []
+    }
+  ],
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinVersion": "2.1.0"
+  }
+}

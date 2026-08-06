@@ -1,0 +1,23 @@
+{
+  "Description": "Discord 음성, 채널, 알림 및 Soundboard 제어",
+  "Name": "Discord Enhanced",
+  "Actions": [
+    { "Name": "음소거", "Tooltip": "마이크 음소거 전환" },
+    { "Name": "누르는 동안 음소거", "Tooltip": "키를 누르는 동안 음소거하고 놓으면 복원" },
+    { "Name": "누르는 동안 말하기", "Tooltip": "키를 누르는 동안 음소거를 해제하고 놓으면 복원" },
+    { "Name": "청각 차단", "Tooltip": "청각 차단 전환" },
+    { "Name": "비디오 전환", "Tooltip": "활성 음성 채널에서 Discord 카메라 전환" },
+    { "Name": "화면 공유 전환", "Tooltip": "활성 음성 채널에서 Discord 화면 공유 전환" },
+    { "Name": "음성 채널", "Tooltip": "설정된 음성 채널에 참가하거나 나가기" },
+    { "Name": "텍스트 채널", "Tooltip": "설정된 텍스트 채널 열기" },
+    { "Name": "오디오 장치 설정", "Tooltip": "Discord 입력 및 출력 장치 설정" },
+    { "Name": "음성 입력 모드", "Tooltip": "음성 활동과 눌러서 말하기 전환" },
+    { "Name": "볼륨 제어", "Tooltip": "Discord 입력 또는 출력 볼륨 제어" },
+    { "Name": "사용자 음성 제어", "Tooltip": "현재 음성 채널의 사용자 볼륨 제어" },
+    { "Name": "알림", "Tooltip": "최근 Discord 알림을 표시하고 마지막 채널 열기" },
+    { "Name": "Soundboard", "Tooltip": "Discord Soundboard 사운드 재생" },
+    { "Name": "서버 통계", "Tooltip": "최신 Discord 서버 상태 표시" },
+    { "Name": "음소거 제어", "Tooltip": "음소거를 전환하고 엔코더로 입력 볼륨 조절" },
+    { "Name": "청각 차단 제어", "Tooltip": "청각 차단을 전환하고 엔코더로 출력 볼륨 조절" }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "Description": "Discord-Sprachkanäle, Kanäle, Benachrichtigungen und Soundboard steuern",
+  "Name": "Discord Enhanced",
+  "Actions": [
+    { "Name": "Stummschalten", "Tooltip": "Mikrofonstummschaltung umschalten" },
+    { "Name": "Push-to-Mute", "Tooltip": "Während des Haltens stummschalten und danach den vorherigen Zustand wiederherstellen" },
+    { "Name": "Push-to-Talk", "Tooltip": "Während des Haltens die Stimme aktivieren und danach den vorherigen Zustand wiederherstellen" },
+    { "Name": "Taubschalten", "Tooltip": "Taubschaltung umschalten" },
+    { "Name": "Video umschalten", "Tooltip": "Discord-Kamera im aktiven Sprachkanal umschalten" },
+    { "Name": "Bildschirmfreigabe umschalten", "Tooltip": "Discord-Bildschirmfreigabe im aktiven Sprachkanal umschalten" },
+    { "Name": "Sprachkanal", "Tooltip": "Einem konfigurierten Sprachkanal beitreten oder ihn verlassen" },
+    { "Name": "Textkanal", "Tooltip": "Einen konfigurierten Textkanal öffnen" },
+    { "Name": "Audiogerät festlegen", "Tooltip": "Discord-Eingabe- und Ausgabegeräte festlegen" },
+    { "Name": "Spracheingabemodus", "Tooltip": "Zwischen Sprachaktivierung und Push-to-Talk wechseln" },
+    { "Name": "Lautstärkeregelung", "Tooltip": "Discord-Eingabe- oder Ausgabelautstärke steuern" },
+    { "Name": "Benutzerlautstärke", "Tooltip": "Die Lautstärke eines Benutzers im aktuellen Sprachkanal steuern" },
+    { "Name": "Benachrichtigungen", "Tooltip": "Aktuelle Discord-Benachrichtigungen anzeigen und den letzten Kanal öffnen" },
+    { "Name": "Soundboard", "Tooltip": "Einen Discord-Soundboard-Sound abspielen" },
+    { "Name": "Serverstatistik", "Tooltip": "Den aktuellen Discord-Serverstatus anzeigen" },
+    { "Name": "Stummschaltungssteuerung", "Tooltip": "Mikrofonstummschaltung umschalten und Eingabelautstärke per Encoder anpassen" },
+    { "Name": "Taubschaltungssteuerung", "Tooltip": "Taubschaltung umschalten und Ausgabelautstärke per Encoder anpassen" }
+  ]
+}

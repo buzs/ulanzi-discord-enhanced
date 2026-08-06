@@ -1,0 +1,134 @@
+:root {
+  --dfi-bg: #202124;
+  --dfi-panel: #2b2d31;
+  --dfi-panel-2: #17191c;
+  --dfi-primary: #5865f2;
+  --dfi-text: #f1f3f4;
+  --dfi-border: #3d4148;
+  --dfi-danger: #ff5f57;
+}
+
+.discord-muted {
+  color: var(--dfi-muted);
+}
+
+.discord-hint {
+  margin: -4px 0 10px;
+  color: var(--dfi-muted);
+  font-size: 12px;
+}
+
+.discord-auth-uri {
+  display: block;
+  margin: 6px 0 12px;
+  overflow-wrap: anywhere;
+}
+
+.discord-guide-callout {
+  display: grid;
+  gap: 5px;
+  margin: 0 0 14px;
+  color: var(--dfi-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.discord-guide-callout strong {
+  color: var(--dfi-text);
+}
+
+.discord-guide-actions,
+.discord-action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.discord-action-grid .dfi-button,
+.discord-guide-actions .dfi-button {
+  width: auto;
+  min-height: 30px;
+  padding: 6px 8px;
+  line-height: 1.2;
+}
+
+.discord-action-secondary {
+  color: var(--dfi-text);
+  background: var(--dfi-panel-2);
+  border: 1px solid var(--dfi-border);
+}
+
+.discord-action-link {
+  color: #a8c7ff;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.discord-action-danger {
+  color: #ffb4b4;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--dfi-danger) 68%, transparent);
+}
+
+.discord-combo {
+  position: relative;
+  min-width: 0;
+}
+
+.discord-combo .dfi-input.is-open {
+  border-radius: 7px 7px 0 0;
+}
+
+.discord-combo-options {
+  display: none;
+  position: absolute;
+  z-index: 30;
+  top: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  max-height: min(260px, 80vh);
+  box-sizing: border-box;
+  overflow-y: auto;
+  color: #1e1f22;
+  background: #ffffff;
+  border: 1px solid #d6d9df;
+  border-top: 0;
+  border-radius: 0 0 7px 7px;
+  padding: 4px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.discord-combo-options option {
+  display: block;
+  color: #1e1f22;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 6px 7px;
+  cursor: pointer;
+}
+
+.discord-combo-options option:hover,
+.discord-combo-options option.active {
+  color: #111318;
+  background: #e9ecff;
+}
+
+.discord-saved {
+  min-height: 18px;
+  margin: 8px 0 0;
+  color: var(--dfi-ok);
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+.discord-saved.is-visible {
+  opacity: 1;
+}
+
+@media (max-width: 320px) {
+  .discord-action-grid,
+  .discord-guide-actions {
+    grid-template-columns: 1fr;
+  }
+}

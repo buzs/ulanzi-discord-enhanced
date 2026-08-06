@@ -1,0 +1,19 @@
+# Local runtime data created after installing or running the plugin.
+.data/
+**/.data/
+
+# Runtime dependencies and local npm artifacts.
+node_modules/
+**/node_modules/
+package-lock.json
+npm-debug.log*
+
+# Release artifacts are attached to GitHub Releases, not committed.
+*.zip
+*.ulanziPlugin.zip
+
+# OS/editor files.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

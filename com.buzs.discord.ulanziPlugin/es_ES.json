@@ -1,0 +1,23 @@
+{
+  "Description": "Control de voz, canales, notificaciones y Soundboard de Discord",
+  "Name": "Discord Enhanced",
+  "Actions": [
+    { "Name": "Silenciar", "Tooltip": "Alternar el silencio del micrófono" },
+    { "Name": "Pulsar para silenciar", "Tooltip": "Silenciar mientras se mantiene pulsada la tecla y restaurar después" },
+    { "Name": "Pulsar para hablar", "Tooltip": "Activar el micrófono mientras se mantiene pulsada la tecla y restaurar después" },
+    { "Name": "Ensordecer", "Tooltip": "Alternar el ensordecimiento" },
+    { "Name": "Alternar vídeo", "Tooltip": "Alternar la cámara de Discord en el canal de voz activo" },
+    { "Name": "Alternar pantalla compartida", "Tooltip": "Alternar la pantalla compartida de Discord en el canal de voz activo" },
+    { "Name": "Canal de voz", "Tooltip": "Entrar o salir de un canal de voz configurado" },
+    { "Name": "Canal de texto", "Tooltip": "Abrir un canal de texto configurado" },
+    { "Name": "Establecer dispositivo de audio", "Tooltip": "Establecer los dispositivos de entrada y salida de Discord" },
+    { "Name": "Modo de entrada de voz", "Tooltip": "Alternar entre actividad de voz y pulsar para hablar" },
+    { "Name": "Control de volumen", "Tooltip": "Controlar el volumen de entrada o salida de Discord" },
+    { "Name": "Control de voz de usuario", "Tooltip": "Controlar el volumen de un usuario en el canal de voz actual" },
+    { "Name": "Notificaciones", "Tooltip": "Mostrar notificaciones recientes y abrir el último canal" },
+    { "Name": "Soundboard", "Tooltip": "Reproducir un sonido del Soundboard de Discord" },
+    { "Name": "Estadísticas del servidor", "Tooltip": "Mostrar el estado actual del servidor de Discord" },
+    { "Name": "Control de silencio", "Tooltip": "Alternar el silencio y ajustar el volumen de entrada con un encoder" },
+    { "Name": "Control de ensordecimiento", "Tooltip": "Alternar el ensordecimiento y ajustar el volumen de salida con un encoder" }
+  ]
+}

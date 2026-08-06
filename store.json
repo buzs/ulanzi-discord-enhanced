@@ -1,0 +1,15 @@
+{
+  "cover": "docs/images/cover.png",
+  "screenshots": [
+    "docs/images/cover.png"
+  ],
+  "longDescription": "Enhanced Discord integration for Ulanzi devices, featuring Rich Presence, real-time activity updates, and smart notifications.",
+  "deviceTypes": [
+    "deck",
+    "dial"
+  ],
+  "tags": [
+    "discord",
+    "tools"
+  ]
+}

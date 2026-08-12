@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Added live numeric values beside Discord volume sliders in the Property Inspector.
+
 ## 0.1.1
 
 - Fixed per-user voice volume reads when Discord returns `user_id` voice states.

@@ -3,7 +3,7 @@
   "Name": "Discord Enhanced",
   "Description": "Control Discord audio, channels and voice state from Ulanzi Deck.",
   "Icon": "resources/assets/btn_discord_enc_logo.svg",
-  "Version": "0.1.1",
+  "Version": "0.1.2",
   "Category": "Discord",
   "CategoryIcon": "resources/assets/btn_discord_enc_logo.svg",
   "CodePath": "plugin/app.js",

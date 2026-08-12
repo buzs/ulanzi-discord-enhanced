@@ -12,6 +12,25 @@
   color: var(--dfi-muted);
 }
 
+.discord-range-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.discord-range-control .dfi-range {
+  flex: 1;
+  min-width: 0;
+}
+
+.discord-range-value {
+  min-width: 34px;
+  color: var(--dfi-text);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
 .discord-hint {
   margin: -4px 0 10px;
   color: var(--dfi-muted);

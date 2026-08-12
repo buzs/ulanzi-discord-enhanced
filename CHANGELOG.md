@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1
+
+- Fixed per-user voice volume reads when Discord returns `user_id` voice states.
+- Enforced Discord's `0-100` input and `0-200` output/user volume limits.
+- Updated volume controls for the Discord-specific limits.
+
 ## 0.1.0
 
 - Initial public distribution of Discord Enhanced for Ulanzi D200.

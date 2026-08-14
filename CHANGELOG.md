@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.4
+
+- Fixed static manifest icon updates so host custom icons are not replaced on plugin restart.
+- Kept compatibility with the currently available Ulanzi software protocol.
+
 ## 0.1.3
 
 - Fixed D200X encoder rotation for Discord volume and user voice controls.

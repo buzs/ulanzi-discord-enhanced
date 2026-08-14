@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3
+
+- Fixed D200X encoder rotation for Discord volume and user voice controls.
+- Fixed encoder direction handling for the Ulanzi SDK event payload.
+
 ## 0.1.2
 
 - Added live numeric values beside Discord volume sliders in the Property Inspector.

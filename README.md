@@ -9,17 +9,20 @@
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.2-5865f2?style=for-the-badge">
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.3-5865f2?style=for-the-badge">
   <img alt="Ulanzi D200" src="https://img.shields.io/badge/Ulanzi-D200-111827?style=for-the-badge">
   <img alt="Windows and macOS" src="https://img.shields.io/badge/platform-Windows%2010%2B%20%7C%20macOS%2010.11%2B-2f81f7?style=for-the-badge">
   <img alt="Node.js" src="https://img.shields.io/badge/runtime-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">
+  <a href="https://ulanzicommunitystore.narlei.com">
+    <img alt="Ulanzi Community Store" src="https://img.shields.io/badge/Ulanzi%20Community%20Store-available-41e6c3?style=for-the-badge&labelColor=1f2937" />
+  </a>
 </p>
 
 ---
 
 ## Overview
 
-Discord Enhanced turns the Ulanzi D200 into a compact Discord control surface. It communicates with Discord Desktop through local RPC and keeps credentials on the local computer.
+Discord Enhanced turns the Ulanzi D200/D200H/D200X into a compact Discord control surface. It communicates with Discord Desktop through local RPC and keeps credentials on the local computer.
 
 This repository is a public distribution package. It contains the final `com.buzs.discord.ulanziPlugin` folder for review and the ZIP used for installation. It does not include the private TypeScript source code.
 

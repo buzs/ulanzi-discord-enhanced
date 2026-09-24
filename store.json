@@ -1,7 +1,9 @@
 {
-  "cover": "docs/images/cover.png",
+  "cover": "docs/images/banner-01.png",
   "screenshots": [
-    "docs/images/cover.png"
+    "docs/images/banner-01.png",
+    "docs/images/banner-02.png",
+    "docs/images/banner-03.png"
   ],
   "longDescription": "Enhanced Discord integration for Ulanzi devices, featuring Rich Presence, real-time activity updates, and smart notifications.",
   "deviceTypes": [

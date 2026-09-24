@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/cover.png" alt="Discord Enhanced" width="700">
+  <img src="docs/images/banner-01.png" alt="Discord Enhanced" width="700">
 </p>
 
 <h1 align="center">Discord Enhanced for Ulanzi D200</h1>

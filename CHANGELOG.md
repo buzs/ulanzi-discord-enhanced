@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.5
+
+- Fixed an endless Discord permission prompt when another Discord instance is open with a different account.
+- The plugin now remembers the authorized Discord account and only reconnects automatically to that account.
+- Paused automatic reconnect when Discord authorization is denied or cancelled, until the account is reconnected in the plugin settings.
+- Limited the diagnostic log to 5 MB with two rotated backups, and removed oversized logs left by older versions.
+
 ## 0.1.4
 
 - Fixed static manifest icon updates so host custom icons are not replaced on plugin restart.

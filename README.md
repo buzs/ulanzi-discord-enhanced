@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/banner-01.png" alt="Discord Enhanced">
+  <img src="docs/images/banner-01.png" alt="Discord Enhanced" width="700">
 </p>
 
 <h1 align="center">Discord Enhanced for Ulanzi D200</h1>
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.5-5865f2?style=for-the-badge">
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.6-5865f2?style=for-the-badge">
   <img alt="Ulanzi D200" src="https://img.shields.io/badge/Ulanzi-D200-111827?style=for-the-badge">
   <img alt="Windows and macOS" src="https://img.shields.io/badge/platform-Windows%2010%2B%20%7C%20macOS%2010.11%2B-2f81f7?style=for-the-badge">
   <img alt="Node.js" src="https://img.shields.io/badge/runtime-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">
@@ -130,6 +130,7 @@ The plugin communicates with Discord Desktop over local IPC or the legacy localh
 
 ## Troubleshooting
 
+- Credentials from the official Ulanzi Discord plugin: do not reuse its Client ID and Client Secret. Create a separate Discord application only for Discord Enhanced.
 - `invalid_client`: verify that the Client ID and Client Secret belong to the same Discord application, and reset the secret if it was rotated.
 - RPC access denied: approve the application or add the Discord account to its tester list.
 - Redirect URI mismatch: add exactly `http://localhost:30910` in OAuth2.

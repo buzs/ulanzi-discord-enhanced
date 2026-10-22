@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.6
+
+- Improved Discord detection on macOS: the plugin now finds Discord's local connection even when Ulanzi Studio starts it without the user's temporary folder setting.
+- Connection errors now show the actual Discord failure, or the folders that were searched, instead of `ECONNREFUSED 127.0.0.1:6472`.
+- The setup guide, README and store description now say not to reuse the Client ID and Client Secret from the official Ulanzi Discord plugin.
+
 ## 0.1.5
 
 - Fixed an endless Discord permission prompt when another Discord instance is open with a different account.

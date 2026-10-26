@@ -145,6 +145,23 @@
   opacity: 1;
 }
 
+.discord-error-reports {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--dfi-border);
+}
+
+.discord-error-reports label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.discord-error-reports .discord-hint {
+  margin: 4px 0 0;
+}
+
 @media (max-width: 320px) {
   .discord-action-grid,
   .discord-guide-actions {

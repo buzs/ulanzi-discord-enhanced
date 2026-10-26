@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.7
+
+- Completed the Japanese, Korean and Chinese translations of the settings panel; texts such as the setup guide notice and the redirect URI prompt no longer appear in English.
+- Added an optional **Send anonymous error reports** setting, off by default. When enabled, only error details are sent, without credentials, account names or file paths. See the README for exactly what is sent.
+
 ## 0.1.6
 
 - Improved Discord detection on macOS: the plugin now finds Discord's local connection even when Ulanzi Studio starts it without the user's temporary folder setting.

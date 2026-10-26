@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.6-5865f2?style=for-the-badge">
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.7-5865f2?style=for-the-badge">
   <img alt="Ulanzi D200" src="https://img.shields.io/badge/Ulanzi-D200-111827?style=for-the-badge">
   <img alt="Windows and macOS" src="https://img.shields.io/badge/platform-Windows%2010%2B%20%7C%20macOS%2010.11%2B-2f81f7?style=for-the-badge">
   <img alt="Node.js" src="https://img.shields.io/badge/runtime-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">
@@ -127,6 +127,19 @@ com.buzs.discord.ulanziPlugin/.data/index.json
 The file contains the local server port, an internal inspector token and encrypted Discord credentials. The Client Secret is encrypted with AES-256-GCM using a key derived from the local machine and plugin UUID. This protects the file at rest from casual inspection, not from malware or a process already running as the same user.
 
 The plugin communicates with Discord Desktop over local IPC or the legacy localhost RPC fallback, and with `discord.com` only during OAuth token exchange.
+
+### Anonymous Error Reports (Optional)
+
+The settings panel has a **Send anonymous error reports** option. It is **off by default**, and nothing is sent unless you turn it on. You can turn it off again at any time.
+
+When it is on, the plugin sends error details to the developer's [Sentry](https://sentry.io) project so bugs can be fixed faster:
+
+- what is sent: the error type and message, the code location (stack trace), the plugin version, the operating system and version, and the Node.js version.
+- what is removed before sending: Client ID, Client Secret, tokens, Discord IDs, the connected account name, e-mail addresses and the user name in file paths.
+- what is never collected: messages, server or channel lists, voice activity, the computer name or your IP address in the report itself (Sentry receives the connection like any web request).
+- when: only for unexpected errors and for connection failures that last more than about a minute, with at most 20 reports per session.
+
+No usage tracking, analytics or activity data is collected.
 
 ## Troubleshooting
 

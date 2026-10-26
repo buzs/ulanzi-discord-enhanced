@@ -1,0 +1,88 @@
+name: Bug report
+description: Something in Discord Enhanced does not work as expected.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please check the [setup guide](https://docs.buzs.dev/plugins/ulanzi-discord-enhanced) and the Troubleshooting section of the README first.
+
+        **Never paste your Client Secret, tokens or other credentials in an issue.**
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem. Include the action (for example Mute, Voice Channel, Soundboard) and any message shown on the button or in the settings panel.
+      placeholder: When I press the Voice Channel button, nothing happens and the settings panel shows ...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Add the Voice Channel action
+        2. Select a server and channel, then click Confirm
+        3. Press the button
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: The button joins the configured voice channel.
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      description: Shown in Ulanzi Studio and in the release name.
+      placeholder: "0.1.8"
+    validations:
+      required: true
+  - type: input
+    id: ulanzi-version
+    attributes:
+      label: Ulanzi Studio version
+      placeholder: "2.1.0"
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - D200
+        - D200H
+        - D200X
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system and version
+      placeholder: Windows 11 24H2 / macOS 15.1
+    validations:
+      required: true
+  - type: dropdown
+    id: discord-client
+    attributes:
+      label: Discord client
+      options:
+        - Stable
+        - PTB
+        - Canary
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Diagnostic log
+      description: |
+        Paste the relevant lines of `discord.log`. The settings panel shows its full path when Discord is not connected; it is inside the installed plugin folder at `com.buzs.discord.ulanziPlugin/.data/discord.log` (on macOS: `~/Library/Application Support/Ulanzi/UlanziDeck/Plugins/com.buzs.discord.ulanziPlugin/.data/discord.log`).
+        Secrets are redacted in the log, but please review it before posting.
+      render: text
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Optional. Drag images here. Hide your Client ID and Client Secret.

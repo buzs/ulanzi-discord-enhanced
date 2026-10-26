@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.8
+
+- Fixed Voice Channel and Text Channel buttons not joining or opening the configured channel (Discord rejected the request with "timeout must be less than or equal to 60").
+
 ## 0.1.7
 
 - Completed the Japanese, Korean and Chinese translations of the settings panel; texts such as the setup guide notice and the redirect URI prompt no longer appear in English.
